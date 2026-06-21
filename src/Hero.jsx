@@ -1,10 +1,10 @@
 import FlickeringDots from "../FlickeringDots";
 
-
-export default function Hero() {
+export default function Hero({ offerRef }) {
   return (
     <div className="min-h-screen flex items-center justify-center">
       {/* CONTENT */}
+
       <div className="relative text-center max-w-3xl px-6">
         {/* TOP LABEL */}
         <p className="text-xs tracking-[0.35em] text-cyan-400 mb-6">
@@ -16,7 +16,7 @@ export default function Hero() {
           <span className="relative inline-block">
             {/* glow layers */}
             <span className="absolute inset-0 bg-linear-to-r from-cyan-50 via-white to-cyan-500 opacity-50 blur-2xl animate-glow" />
-        
+
             {/* actual text */}
             <span className="relative z-10">
               findsbyte<span className="text-cyan-400">.shop</span>
@@ -32,7 +32,9 @@ export default function Hero() {
         </p>
 
         {/* CTA BUTTON */}
-        <button className="mt-8 px-9 py-4 tracking-wide rounded-full bg-cyan-400 text-black font-semibold hover:shadow-[0_0_45px_rgba(0,212,255,0.5)] hover:scale-[1.02] cursor-pointer  transition-all duration-500 ease-in-out">
+        <button onClick={() => {
+          offerRef.current?.scrollIntoView({behavior: "smooth"})
+        }} className="mt-8 px-9 py-4 tracking-wide rounded-full bg-cyan-400 text-black font-semibold hover:shadow-[0_0_45px_rgba(0,212,255,0.5)] hover:scale-[1.02] cursor-pointer  transition-all duration-500 ease-in-out">
           MAKE AN OFFER
         </button>
 

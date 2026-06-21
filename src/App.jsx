@@ -4,9 +4,10 @@ import Hero from "./Hero"
 import Home from "./Home"
 import OfferForm from "./OfferForm"
 import Sample from "./Sample"
+import { useRef } from "react";
 
 function App() {
-
+  const offerRef = useRef(null);
   return (
     <div className="relative flex flex-col items-center justify-center bg-[#05070d] overflow-hidden text-white">
       {/* GRID BACKGROUND */}
@@ -15,9 +16,10 @@ function App() {
       {/* SOFT GLOW OVERLAY */}
       <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black opacity-80" />
       <FlickeringDots count="17" />
-      <Hero />
-      <Features />
-      <OfferForm />
+     
+        <Hero offerRef={offerRef} />
+        <Features />
+        <OfferForm offerRef={offerRef} />
 
     </div>)
 }
