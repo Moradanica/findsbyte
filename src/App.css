@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* @layer utilities {
+  .bg-radial-gradient {
+    background-image: radial-gradient(
+      circle at center,
+      var(--tw-gradient-stops)
+    );
+  }
+} */
+

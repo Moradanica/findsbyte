@@ -1,0 +1,104 @@
+.bg-radial-gradient {
+  background: radial-gradient(circle at center, rgba(0,212,255,0.08), transparent 60%);
+}
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1);
+    filter: blur(44px);
+  }
+}
+
+.animate-glow {
+  animation: glowPulse 5s ease-in-out infinite;
+}
+
+
+
+/* @keyframes softGlow {
+  0% {
+    text-shadow:
+      0 0 12px,
+      0 0 24px;
+  }
+  50% {
+    text-shadow:
+      0 0 18px,
+      0 0 36px;
+  }
+  100% {
+    text-shadow:
+      0 0 12px ,
+      0 0 24px ;
+  }
+} */
+
+/* subtle animated glow using the SAME text color */
+/* .text-soft-glow {
+  animation: softGlow 2.5s ease-in-out infinite;
+} */
+
+/* .glow-box {
+  background: #111;
+  box-shadow:
+    0 0 20px rgba(0, 212, 255, 0.4),
+    0 0 40px rgba(0, 212, 255, 0.25);
+} */
+
+/* .glow-box {
+  animation: boxGlow 3s ease-in-out infinite;
+} */
+
+/* .glow-box {
+  animation: boxGlow 3s ease-in-out infinite;
+}
+
+@keyframes boxGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(0,212,255,.4),
+      0 0 40px rgba(0,212,255,.25);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(0,212,255,.6),
+      0 0 60px rgba(0,212,255,.35);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(0,212,255,.4),
+      0 0 40px rgba(0,212,255,.25);
+  }
+} */
+
+/* .glow-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-heading::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: rgba(0, 212, 255, 0.25);
+  filter: blur(40px);
+  z-index: -1;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+} */
