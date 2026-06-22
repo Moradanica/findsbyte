@@ -1,5 +1,6 @@
 import FlickeringDots from "../FlickeringDots"
 import Features from "./Features"
+import Footer from "./Footer"
 import Hero from "./Hero"
 import Home from "./Home"
 import OfferForm from "./OfferForm"
@@ -20,7 +21,7 @@ function App() {
         <Hero offerRef={offerRef} />
         <Features />
         <OfferForm offerRef={offerRef} />
-
+        <Footer />
     </div>)
 }
 
