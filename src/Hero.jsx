@@ -25,7 +25,7 @@ export default function Hero({ offerRef }) {
         </h1>
 
         {/* SUBTITLE */}
-        <p className="mt-6 text-sm md:text-base text-gray-400 leading-relaxed">
+        <p className="mt-6 text-sm md:text-base text-gray-400/70 leading-relaxed">
           The perfect brand for your next e-commerce or tech venture.
           <br />
           Own it before someone else does.
@@ -48,7 +48,7 @@ export default function Hero({ offerRef }) {
           {["Instant Transfer", "Secure Escrow", "Negotiable Price"].map((item) => (
             <span
               key={item}
-              className="px-4 py-2 text-xs rounded-full border border-white/10 bg-white/5 text-gray-400"
+              className="mt-6 px-6 py-1 text-xs rounded-full border border-white/10 bg-white/5 text-gray-400/70"
             >
               {item}
             </span>
