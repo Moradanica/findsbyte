@@ -21,7 +21,7 @@ const labels = [
 export default function OfferForm({offerRef}) {
     const [formData, setFormData] = useState({});
     return (
-        <div ref={offerRef} className="flex items-center justify-center w-full min-h-screen">
+        <div ref={offerRef} className="flex items-center justify-center px-10 w-sm md:w-full min-h-screen">
             <div className="relative z-10 px-8 py-7 rounded-md border border-white/10 bg-[#0b0e1b]">
                 <form className="flex flex-col" action="">
                     <h4 className="text-[25px] font-semibold">Make an offer</h4>

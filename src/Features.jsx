@@ -22,8 +22,8 @@ export default function Features() {
     return (
         <div className="relative z-10 py-24">
             <div className="flex flex-col min-h-screen w-full items-center justify-center text-white">
-                <h2 className="text-[64px] md:text-[30px]">Why <span className="text-cyan-500"> findsbyte.shop</span>?</h2>
-                <div className=" flex mx-8 my-8 gap-5 max-w-3/4">
+                <h2 className="text-[34px] md:text-[30px]">Why <span className="text-cyan-500"> findsbyte.shop</span>?</h2>
+                <div className="flex flex-col md:flex-row mx-8 my-8 gap-5 max-w-3/4">
                     {features.map(({ id, title, description }) => {
                         return <FeaturesCard key={id} title={title} description={description} />
                     })}

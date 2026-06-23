@@ -5,18 +5,17 @@ export default function Hero({ offerRef }) {
     <div className="min-h-screen flex items-center justify-center">
       {/* CONTENT */}
 
-      <div className="relative text-center max-w-3xl px-6">
+      <div className="relative text-center lg:max-w-fit mx-auto md:px-6">
         {/* TOP LABEL */}
-        <p className="text-xs tracking-[0.35em] text-cyan-400 mb-6">
+        <p className="text-[8px] md:text-xs tracking-[0.35em] text-cyan-400 mb-6">
           PREMIUM DOMAIN FOR SALE
         </p>
 
         {/* TITLE */}
-        <h1 className="text-[74px] md:text-[106px] font-bold leading-none tracking-wider font-sans">
+        <h1 className="w-dvw text-[44px] md:text-[106px] font-bold leading-none tracking-wider font-sans">
           <span className="relative inline-block">
             {/* glow layers */}
             <span className="absolute inset-0 bg-linear-to-r from-cyan-50 via-white to-cyan-500 opacity-50 blur-2xl animate-glow" />
-
             {/* actual text */}
             <span className="relative z-10">
               findsbyte<span className="text-cyan-400">.shop</span>
