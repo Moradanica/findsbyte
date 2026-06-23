@@ -18,7 +18,7 @@ const labels = [
     }
 ]
 
-export default function OfferForm({offerRef}) {
+export default function OfferForm({ offerRef }) {
     const [formData, setFormData] = useState({});
     return (
         <div ref={offerRef} className="flex items-center justify-center px-10 w-sm md:w-full min-h-screen">
@@ -35,23 +35,32 @@ export default function OfferForm({offerRef}) {
                             <input id={id} name={id} type="text"
                                 placeholder={placeholder}
                                 className="p-3 text-[13px] rounded-md border text-gray-400 border-white/10 focus:outline-3 focus:border-2 focus:border-blue-400"
-                                 onChange={(e) => setFormData({
-                                                ...formData,
-                                                [id]: e.target.value, 
-                                            })}
+                                onChange={(e) => setFormData({
+                                    ...formData,
+                                    [id]: e.target.value,
+                                })}
                             />
                         </div>
 
                     })}
-                    <button  onClick={() => { 
+                    <button onClick={() => {
                         const subject = "New Domain Offer";
                         const body = `Name: ${formData.name || ""}%0D%0AEmail: ${formData.email || ""}%0D%0AOffer: $${formData.offer || ""}`;
-    window.location.href =
-      `mailto:moradanica@gmail.com?subject=${subject}&body=${body}`;
-  }}
-  className="uppercase p-3 w-full rounded-full bg-cyan-400 text-black text-sm font-semibold hover:shadow-[0_0_45px_rgba(0,212,255,0.3)] transition-all duration-300
+                        window.location.href =
+                            `mailto:moradanica@gmail.com?subject=${subject}&body=${body}`;
+                    }}
+                        className="uppercase p-3 w-full rounded-full bg-cyan-400 text-black text-sm font-semibold hover:shadow-[0_0_45px_rgba(0,212,255,0.3)] transition-all duration-300
   hover:scale-[1.02] cursor-pointer ease-in-out">Submit Offer</button>
                 </form>
+                <p className="mt-4 text-xs text-center text-gray-500">
+                    Having trouble? Email me at{" "}
+                    <a
+                        href="mailto:moradanica@gmail.com"
+                        className="text-cyan-400 hover:underline"
+                    >
+                        moradanica@gmail.com
+                    </a>
+                </p>
             </div>
         </div>
     );
