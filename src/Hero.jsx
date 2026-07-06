@@ -15,7 +15,7 @@ export default function Hero({ offerRef }) {
         <h1 className="w-dvw text-[44px] md:text-[106px] font-bold leading-none tracking-wider font-sans">
           <span className="relative inline-block">
             {/* glow layers */}
-            <span className="absolute inset-0 bg-linear-to-r from-cyan-50 via-white to-cyan-500 opacity-50 blur-2xl animate-glow" />
+            <span className="absolute inset-0 bg-linear-to-r from-cyan-50 via-white to-cyan-500 animate-glow" />
             {/* actual text */}
             <span className="relative z-10">
               findsbyte<span className="text-cyan-400">.shop</span>

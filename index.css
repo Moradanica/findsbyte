@@ -5,16 +5,18 @@
 
 
 @keyframes glowPulse {
-  0%, 100% {
-    opacity: 2;
+   0%, 100% {
+    opacity: 0.5;
     transform: scale(1);
     filter: blur(90px);
   }
+
   50% {
-    opacity: 3;
+    opacity: 0;
     transform: scale(1);
-    filter: blur(50px);
+    filter: blur(20px);
   }
+
 }
 
 .animate-glow {
